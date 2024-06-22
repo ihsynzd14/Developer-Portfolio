@@ -84,7 +84,7 @@ export const projects = [
       "/django.png",
       "/postgres.png",
     ],
-    link: "/www.mymedbook.it",
+    link: "//mymedbook.eu",
   },
   {
     id: 2,
@@ -98,7 +98,7 @@ export const projects = [
       "/flutter.svg",
       "/python.png",
     ],
-    link: "/ui.yoom.com",
+    link: "//ui.diabtrack.com",
   },
   {
     id: 3,
@@ -112,7 +112,7 @@ export const projects = [
       "/python.png",
       "/ts.svg",
     ],
-    link: "/ui.aiimg.com",
+    link: "//vitatrack.com",
   },
   {
     id: 4,
@@ -120,7 +120,7 @@ export const projects = [
     des: "Real-time tracking, instant alerts, and comprehensive portfolio management",
     img: "/p5.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/three.svg"],
-    link: "/ui.apple.com",
+    link: "//ui.crypto.com",
   },
 ];
 
