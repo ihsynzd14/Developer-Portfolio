@@ -1,9 +1,4 @@
 <div align="center">
-  <br />
-    <a href="https://youtu.be/FTH6Dn3AyIQ" target="_blank">
-      <img src="https://github.com/IskandarHuseynzade/portfolio/assets/151519281/c6ca3c03-6cb7-4f67-a9b9-a73da5bfa0d8" alt="Project Banner">
-    </a>
-  <br />
 
   <div>
     <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextdotjs" />
@@ -14,9 +9,6 @@
 
   <h3 align="center">A Modern Next.js Portfolio</h3>
 
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -29,21 +21,12 @@
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/FTH6Dn3AyIQ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
 
 ## <a name="introduction">🤖 Introduction</a>
 
 Built with Next.js for handling the user interface, Three.js for rendering 3D elements, Framer motion for beautiful animations, and styled with TailwindCSS, this portfolio demonstrates the developer's skills in a unique manner that creates a lasting impact.
 
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+** members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
+If you're getting started and need assistance or face any bugs, please let me know.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -58,7 +41,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Bento Grid**: Modern layout presenting personal information using cutting-edge CSS design techniques.
 
-👉 **3D Elements**: Interactive 3D design elements, such as a GitHub-style globe and card hover effects, adding depth and engagement.
+👉 **3D Elements**:  Interactive 3D design elements, such as a GitHub-style globe and card hover effects, adding depth and engagement.
 
 👉 **Testimonials**: Dynamic testimonials area with scrolling or animated content for enhanced engagement.
 
@@ -68,7 +51,7 @@ If you're getting started and need assistance or face any bugs, join our active 
 
 👉 **Responsiveness**: Seamless adaptability across all devices, ensuring optimal viewing experience for every user.
 
-and many more, including code architecture and reusability
+and many more, including code architecture and reusability 
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -85,7 +68,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/IskandarHuseynzade/portfolio.git
+git clone https://github.com/ihsynzd14/portfolio.git
 cd portfolio
 ```
 
@@ -185,34 +168,35 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+    title: "Interactive 3D Planetarium",
+    des: "Journey through space with our immersive 3D model of the solar system, showcasing the planets in stunning detail.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/IskandarHuseynzade?tab=repositories",
+    link: "https://github.com/ihsynzd14/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Connect+ - Ultimate Video Meetings",
+    des: "Revolutionize your online meetings with Connect+, offering seamless and efficient video conferencing solutions.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/IskandarHuseynzade/zoom-clone",
+    link: "https://github.com/ihsynzd14/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Next-Gen AI Design Platform",
+    des: "Experience the future of design with our AI-driven SaaS platform, featuring advanced tools and a comprehensive credit system.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/IskandarHuseynzade/ai_saas_app",
+    link: "https://github.com/ihsynzd14/",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "iPhone 15 Pro 3D Showcase",
+    des: "Dive into the sleek design of the iPhone 15 Pro with our animated 3D website, enhanced by GSAP and Three.js.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/ihsynzd14/",
   },
 ];
 
@@ -640,6 +624,7 @@ export default config;
 
 </details>
 
+
 <details>
 <summary><code>Linear Gradient</code></summary>
 
@@ -652,8 +637,8 @@ style={{
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
 ```
-
 </details>
+
 
 ## <a name="links">🔗 Assets</a>
 
@@ -681,6 +666,3 @@ And if you're hungry for more than just a course and want to understand how we l
 </a>
 
 #
-#   p o r t f o l i o  
- #   p o r t f o l i o  
- 
