@@ -4,9 +4,25 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaLocationArrow } from "react-icons/fa6";
 import { useParams } from "next/navigation";
+import {
+  FaClock,
+  FaLightbulb,
+  FaShieldAlt,
+  FaSync,
+  FaMobile,
+  FaServer,
+} from "react-icons/fa";
 
 import { projects } from "@/data";
 import MagicButton from "@/components/MagicButton";
+
+// Feature icon mapping
+const featureIcons: { [key: string]: any } = {
+  "Responsive and intuitive user interface": FaMobile,
+  "Real-time data synchronization": FaSync,
+  "Advanced security measures": FaShieldAlt,
+  "Scalable architecture": FaServer,
+};
 
 export default function ProjectPage() {
   const { id } = useParams();
@@ -14,7 +30,6 @@ export default function ProjectPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Find project by id
     const projectData = projects.find((p) => p.id === Number(id));
     setProject(projectData);
     setLoading(false);
@@ -101,6 +116,7 @@ export default function ProjectPage() {
 
         {/* Project Details */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
+          {/* Features Section */}
           <motion.div
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -108,24 +124,40 @@ export default function ProjectPage() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-xl font-semibold mb-2">Project Overview</h3>
-              <p className="text-white-100">
-                A comprehensive solution that leverages cutting-edge
-                technologies to deliver exceptional user experiences and robust
-                functionality.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Key Features</h3>
-              <ul className="list-disc list-inside text-white-100 space-y-2">
-                <li>Responsive and intuitive user interface</li>
-                <li>Real-time data synchronization</li>
-                <li>Advanced security measures</li>
-                <li>Scalable architecture</li>
-              </ul>
+              <h3 className="text-xl font-semibold mb-6">Key Features</h3>
+              <div className="grid gap-6">
+                {project.features.map((feature: any, index: number) => {
+                  const IconComponent =
+                    featureIcons[feature.title] || FaLightbulb;
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ x: -20, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: 0.1 * index }}
+                      className="p-4 rounded-xl bg-black-200 border border-white/10"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="p-3 rounded-lg bg-purple/10">
+                          <IconComponent className="w-6 h-6 text-purple" />
+                        </div>
+                        <div>
+                          <h4 className="font-semibold mb-2">
+                            {feature.title}
+                          </h4>
+                          <p className="text-white-100 text-sm">
+                            {feature.details}
+                          </p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
             </div>
           </motion.div>
 
+          {/* Timeline Section */}
           <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -133,24 +165,35 @@ export default function ProjectPage() {
             className="space-y-6"
           >
             <div>
-              <h3 className="text-xl font-semibold mb-2">Project Timeline</h3>
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-purple" />
-                  <p className="text-white-100">Planning and Design</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-purple" />
-                  <p className="text-white-100">Development Phase</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-purple" />
-                  <p className="text-white-100">Testing and QA</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 rounded-full bg-purple" />
-                  <p className="text-white-100">Deployment</p>
-                </div>
+              <h3 className="text-xl font-semibold mb-6">Project Timeline</h3>
+              <div className="space-y-6">
+                {project.timeline.map((phase: any, index: number) => (
+                  <motion.div
+                    key={index}
+                    initial={{ x: 20, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.1 * index }}
+                    className="relative pl-8"
+                  >
+                    {index !== project.timeline.length - 1 && (
+                      <div className="absolute left-[0.9rem] top-8 w-0.5 h-full bg-purple/30" />
+                    )}
+                    <div className="flex items-start gap-4">
+                      <div className="absolute left-0 p-2 rounded-full bg-purple">
+                        <FaClock className="w-3 h-3 text-white" />
+                      </div>
+                      <div className="bg-black-200 rounded-xl p-4 border border-white/10 w-full">
+                        <h4 className="font-semibold mb-1">{phase.phase}</h4>
+                        <p className="text-purple text-sm mb-2">
+                          {phase.duration}
+                        </p>
+                        <p className="text-white-100 text-sm">
+                          {phase.details}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </motion.div>

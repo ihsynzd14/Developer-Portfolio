@@ -85,11 +85,59 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Adaptive design that works seamlessly across all devices with gesture controls and smooth animations",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Instant updates across devices using WebSocket technology and efficient caching mechanisms",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "End-to-end encryption, two-factor authentication, and HIPAA compliance for medical data protection",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Microservices-based architecture with containerization for easy scaling and maintenance",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "6 weeks",
+        details:
+          "Requirements gathering, wireframing, and architecture planning with stakeholders",
+      },
+      {
+        phase: "Development Phase",
+        duration: "14 weeks",
+        details:
+          "Iterative development with bi-weekly sprints and continuous integration",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "4 weeks",
+        details:
+          "Comprehensive testing including unit tests, integration tests, and user acceptance testing",
+      },
+      {
+        phase: "Deployment",
+        duration: "2 weeks",
+        details:
+          "Staged deployment with monitoring and performance optimization",
+      },
+    ],
   },
   {
     id: 2,
     title: "FinTrackPro",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    des: "Comprehensive financial tracking and analysis platform with real-time insights and automated reporting.",
     img: "https://i.imgur.com/lUukq1x.png",
     iconLists: [
       "/flutter.svg",
@@ -99,11 +147,57 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Dynamic dashboards with interactive charts and customizable widgets",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Live financial data updates with automated reconciliation and backup systems",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Bank-grade encryption, multi-factor authentication, and automated threat detection",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Cloud-native architecture with automatic scaling and load balancing",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "8 weeks",
+        details:
+          "Financial systems analysis, security planning, and UX research",
+      },
+      {
+        phase: "Development Phase",
+        duration: "16 weeks",
+        details: "Agile development with focus on security and performance",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "6 weeks",
+        details:
+          "Security audits, performance testing, and compliance verification",
+      },
+      {
+        phase: "Deployment",
+        duration: "3 weeks",
+        details: "Phased rollout with detailed monitoring and backup systems",
+      },
+    ],
   },
   {
     id: 3,
     title: "ShiftSmart AI",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    des: "AI-powered workforce management system with intelligent scheduling and performance analytics.",
     img: "https://i.imgur.com/PkJF885.png",
     iconLists: [
       "/flutter.svg",
@@ -113,11 +207,58 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Smart scheduling interface with drag-and-drop functionality and mobile-first design",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Instant schedule updates with conflict resolution and automated notifications",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Role-based access control, audit logging, and encrypted employee data storage",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Distributed system architecture supporting multiple locations and time zones",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "7 weeks",
+        details: "Workforce analysis, AI model planning, and UX prototyping",
+      },
+      {
+        phase: "Development Phase",
+        duration: "12 weeks",
+        details:
+          "AI model training, frontend development, and backend integration",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "5 weeks",
+        details:
+          "Algorithm validation, load testing, and user acceptance trials",
+      },
+      {
+        phase: "Deployment",
+        duration: "2 weeks",
+        details:
+          "Gradual rollout with performance monitoring and user training",
+      },
+    ],
   },
   {
     id: 4,
     title: "InventorStock AI",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    des: "Intelligent inventory management system with predictive analytics and automated reordering.",
     img: "https://i.imgur.com/cK3brKh.png",
     iconLists: [
       "/flutter.svg",
@@ -127,11 +268,56 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Real-time inventory dashboards with barcode scanning and search functionality",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Cross-warehouse inventory tracking with automated stock level updates",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Secure supplier integration, transaction logging, and fraud detection",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Multi-tenant architecture supporting unlimited SKUs and locations",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "5 weeks",
+        details:
+          "Inventory system analysis, AI model design, and integration planning",
+      },
+      {
+        phase: "Development Phase",
+        duration: "10 weeks",
+        details: "Core functionality development with ML model integration",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "4 weeks",
+        details: "Predictive model validation and system integration testing",
+      },
+      {
+        phase: "Deployment",
+        duration: "3 weeks",
+        details: "Phased warehouse rollout with staff training",
+      },
+    ],
   },
   {
     id: 5,
     title: "i2 Business Companion",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    des: "All-in-one business management platform with integrated CRM, accounting, and project management.",
     img: "https://i.imgur.com/fl9BAMk.png",
     iconLists: [
       "/flutter.svg",
@@ -141,11 +327,56 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Unified dashboard with customizable widgets and cross-platform accessibility",
+      },
+      {
+        title: "Real-time data synchronization",
+        details: "Seamless data flow between modules with automated backups",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Enterprise-grade encryption, SSO integration, and compliance monitoring",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Microservices architecture with modular design for easy expansion",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "9 weeks",
+        details:
+          "Business process analysis, integration planning, and UX research",
+      },
+      {
+        phase: "Development Phase",
+        duration: "18 weeks",
+        details: "Module development with continuous integration/deployment",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "6 weeks",
+        details:
+          "End-to-end testing, performance optimization, and security audits",
+      },
+      {
+        phase: "Deployment",
+        duration: "4 weeks",
+        details: "Module-wise deployment with business continuity planning",
+      },
+    ],
   },
   {
     id: 6,
     title: "EngageAI CRM",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    des: "AI-powered customer relationship management system with predictive analytics and automated engagement.",
     img: "https://i.imgur.com/YFO3XIg.png",
     iconLists: [
       "/flutter.svg",
@@ -155,11 +386,59 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "360-degree customer view with AI-driven insights and interaction timeline",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Omnichannel data integration with intelligent lead scoring and opportunity tracking",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "GDPR-compliant data handling, granular access controls, and encrypted customer data",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Cloud-native architecture supporting millions of customer records with instant search",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "8 weeks",
+        details:
+          "CRM workflow analysis, AI model selection, and UX prototyping",
+      },
+      {
+        phase: "Development Phase",
+        duration: "16 weeks",
+        details:
+          "AI integration, custom workflow development, and automation implementation",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "6 weeks",
+        details:
+          "AI model validation, workflow testing, and performance optimization",
+      },
+      {
+        phase: "Deployment",
+        duration: "3 weeks",
+        details:
+          "Department-wise rollout with user training and data migration",
+      },
+    ],
   },
   {
     id: 7,
     title: "TrendTrove",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    des: "E-commerce analytics platform with trend prediction and inventory optimization.",
     img: "https://i.imgur.com/DfWDX7a.png",
     iconLists: [
       "/flutter.svg",
@@ -169,20 +448,53 @@ export const projects = [
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
-  },
-  {
-    id: 8,
-    title: "MyMedBook Digital Health",
-    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "https://i.imgur.com/kdGK7eh.png",
-    iconLists: [
-      "/flutter.svg",
-      "/python.png",
-      "/ts.svg",
-      "/django.png",
-      "/postgres.png",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Interactive trend visualization with predictive analytics dashboard",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Multi-channel sales tracking with automated trend analysis and reporting",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Secure API integrations, encrypted data storage, and audit logging",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Distributed processing architecture for real-time trend analysis",
+      },
     ],
-    link: "//mymedbook.eu",
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "7 weeks",
+        details:
+          "Market analysis, trend algorithm design, and interface planning",
+      },
+      {
+        phase: "Development Phase",
+        duration: "15 weeks",
+        details:
+          "Analytics engine development, API integrations, and frontend implementation",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "5 weeks",
+        details:
+          "Algorithm accuracy testing, load testing, and user acceptance",
+      },
+      {
+        phase: "Deployment",
+        duration: "2 weeks",
+        details: "Beta testing with select merchants and full rollout",
+      },
+    ],
   },
   {
     id: 9,
@@ -197,6 +509,53 @@ export const projects = [
       "/python.png",
     ],
     link: "//ui.diabtrack.com",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Easy glucose logging with customizable charts and trend analysis",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Instant sync with glucose monitors and healthcare provider systems",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "HIPAA-compliant data storage, encrypted medical data, and secure provider access",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Microservices architecture supporting real-time monitoring and alerts",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "8 weeks",
+        details:
+          "Medical device integration planning, AI coaching system design, and UX research",
+      },
+      {
+        phase: "Development Phase",
+        duration: "16 weeks",
+        details:
+          "Core tracking features, AI model implementation, and provider dashboard",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "6 weeks",
+        details:
+          "Medical accuracy validation, integration testing, and compliance verification",
+      },
+      {
+        phase: "Deployment",
+        duration: "3 weeks",
+        details: "Beta testing with select clinics and phased patient rollout",
+      },
+    ],
   },
   {
     id: 10,
@@ -211,6 +570,51 @@ export const projects = [
       "/ts.svg",
     ],
     link: "//vitatrack.com",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Personalized supplement dashboard with intake reminders and progress tracking",
+      },
+      {
+        title: "Real-time data synchronization",
+        details: "Cross-device vitamin tracking with health app integrations",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Encrypted personal health data, secure third-party integrations",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Cloud-based system supporting millions of daily tracking entries",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "6 weeks",
+        details: "Nutritional database design, recommendation engine planning",
+      },
+      {
+        phase: "Development Phase",
+        duration: "12 weeks",
+        details:
+          "Core tracking features, personalization algorithm, notification system",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "4 weeks",
+        details:
+          "Recommendation accuracy testing, usability studies, performance optimization",
+      },
+      {
+        phase: "Deployment",
+        duration: "2 weeks",
+        details: "Staged rollout with continuous monitoring and updates",
+      },
+    ],
   },
   {
     id: 11,
@@ -219,6 +623,53 @@ export const projects = [
     img: "https://i.imgur.com/sv5lSiL.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/three.svg"],
     link: "//ui.crypto.com",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Interactive portfolio dashboard with real-time price charts and asset allocation views",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Multi-exchange integration with automated portfolio balancing and tax reporting",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Hardware wallet integration, 2FA, and encrypted API connections",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "High-frequency data processing with sub-second market updates",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "7 weeks",
+        details:
+          "Exchange API integration planning, security architecture design",
+      },
+      {
+        phase: "Development Phase",
+        duration: "14 weeks",
+        details:
+          "Trading interface development, real-time data processing implementation",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "5 weeks",
+        details:
+          "Exchange connectivity testing, security audits, performance optimization",
+      },
+      {
+        phase: "Deployment",
+        duration: "3 weeks",
+        details: "Beta testing with power users and gradual public release",
+      },
+    ],
   },
 ];
 
