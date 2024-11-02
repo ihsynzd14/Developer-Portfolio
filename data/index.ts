@@ -79,8 +79,9 @@ export const projects = [
     img: "https://i.imgur.com/3LKTC6E.png",
     iconLists: [
       "/flutter.svg",
+      "/openai.webp",
       "/python.png",
-      "/ts.svg",
+      "/dart.png",
       "/django.png",
       "/postgres.png",
     ],
@@ -140,9 +141,10 @@ export const projects = [
     des: "Comprehensive financial tracking and analysis platform with real-time insights and automated reporting.",
     img: "https://i.imgur.com/lUukq1x.png",
     iconLists: [
+      "/re.svg",
       "/flutter.svg",
       "/python.png",
-      "/ts.svg",
+      "/dart.png",
       "/django.png",
       "/postgres.png",
     ],
@@ -196,133 +198,14 @@ export const projects = [
   },
   {
     id: 3,
-    title: "ShiftSmart AI",
-    des: "AI-powered workforce management system with intelligent scheduling and performance analytics.",
-    img: "https://i.imgur.com/PkJF885.png",
-    iconLists: [
-      "/flutter.svg",
-      "/python.png",
-      "/ts.svg",
-      "/django.png",
-      "/postgres.png",
-    ],
-    link: "//mymedbook.eu",
-    features: [
-      {
-        title: "Responsive and intuitive user interface",
-        details:
-          "Smart scheduling interface with drag-and-drop functionality and mobile-first design",
-      },
-      {
-        title: "Real-time data synchronization",
-        details:
-          "Instant schedule updates with conflict resolution and automated notifications",
-      },
-      {
-        title: "Advanced security measures",
-        details:
-          "Role-based access control, audit logging, and encrypted employee data storage",
-      },
-      {
-        title: "Scalable architecture",
-        details:
-          "Distributed system architecture supporting multiple locations and time zones",
-      },
-    ],
-    timeline: [
-      {
-        phase: "Planning and Design",
-        duration: "7 weeks",
-        details: "Workforce analysis, AI model planning, and UX prototyping",
-      },
-      {
-        phase: "Development Phase",
-        duration: "12 weeks",
-        details:
-          "AI model training, frontend development, and backend integration",
-      },
-      {
-        phase: "Testing and QA",
-        duration: "5 weeks",
-        details:
-          "Algorithm validation, load testing, and user acceptance trials",
-      },
-      {
-        phase: "Deployment",
-        duration: "2 weeks",
-        details:
-          "Gradual rollout with performance monitoring and user training",
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: "InventorStock AI",
-    des: "Intelligent inventory management system with predictive analytics and automated reordering.",
-    img: "https://i.imgur.com/cK3brKh.png",
-    iconLists: [
-      "/flutter.svg",
-      "/python.png",
-      "/ts.svg",
-      "/django.png",
-      "/postgres.png",
-    ],
-    link: "//mymedbook.eu",
-    features: [
-      {
-        title: "Responsive and intuitive user interface",
-        details:
-          "Real-time inventory dashboards with barcode scanning and search functionality",
-      },
-      {
-        title: "Real-time data synchronization",
-        details:
-          "Cross-warehouse inventory tracking with automated stock level updates",
-      },
-      {
-        title: "Advanced security measures",
-        details:
-          "Secure supplier integration, transaction logging, and fraud detection",
-      },
-      {
-        title: "Scalable architecture",
-        details:
-          "Multi-tenant architecture supporting unlimited SKUs and locations",
-      },
-    ],
-    timeline: [
-      {
-        phase: "Planning and Design",
-        duration: "5 weeks",
-        details:
-          "Inventory system analysis, AI model design, and integration planning",
-      },
-      {
-        phase: "Development Phase",
-        duration: "10 weeks",
-        details: "Core functionality development with ML model integration",
-      },
-      {
-        phase: "Testing and QA",
-        duration: "4 weeks",
-        details: "Predictive model validation and system integration testing",
-      },
-      {
-        phase: "Deployment",
-        duration: "3 weeks",
-        details: "Phased warehouse rollout with staff training",
-      },
-    ],
-  },
-  {
-    id: 5,
     title: "i2 Business Companion",
     des: "All-in-one business management platform with integrated CRM, accounting, and project management.",
     img: "https://i.imgur.com/fl9BAMk.png",
     iconLists: [
-      "/flutter.svg",
+      "/re.svg",
+      "/expo.svg",
+      "/openai.webp",
       "/python.png",
-      "/ts.svg",
       "/django.png",
       "/postgres.png",
     ],
@@ -374,15 +257,138 @@ export const projects = [
     ],
   },
   {
+    id: 4,
+    title: "InventorStock AI",
+    des: "Intelligent inventory management system with predictive analytics and automated reordering.",
+    img: "https://i.imgur.com/cK3brKh.png",
+    iconLists: [
+      "/next.svg",
+      "/python.png",
+      "/ts.svg",
+      "/nodejs.png",
+      "/express.png",
+      "/postgres.png",
+      "/mongodb.webp",
+    ],
+    link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Real-time inventory dashboards with barcode scanning and search functionality",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Cross-warehouse inventory tracking with automated stock level updates",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Secure supplier integration, transaction logging, and fraud detection",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Multi-tenant architecture supporting unlimited SKUs and locations",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "5 weeks",
+        details:
+          "Inventory system analysis, AI model design, and integration planning",
+      },
+      {
+        phase: "Development Phase",
+        duration: "10 weeks",
+        details: "Core functionality development with ML model integration",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "4 weeks",
+        details: "Predictive model validation and system integration testing",
+      },
+      {
+        phase: "Deployment",
+        duration: "3 weeks",
+        details: "Phased warehouse rollout with staff training",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "ShiftSmart AI",
+    des: "AI-powered workforce management system with intelligent scheduling and performance analytics.",
+    img: "https://i.imgur.com/PkJF885.png",
+    iconLists: [
+      "/flutter.svg",
+      "/nodejs.png",
+      "/express.png",
+      "/ts.svg",
+      "/postgres.png",
+      "/mongodb.webp",
+    ],
+    link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Smart scheduling interface with drag-and-drop functionality and mobile-first design",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Instant schedule updates with conflict resolution and automated notifications",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Role-based access control, audit logging, and encrypted employee data storage",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Distributed system architecture supporting multiple locations and time zones",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "7 weeks",
+        details: "Workforce analysis, AI model planning, and UX prototyping",
+      },
+      {
+        phase: "Development Phase",
+        duration: "12 weeks",
+        details:
+          "AI model training, frontend development, and backend integration",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "5 weeks",
+        details:
+          "Algorithm validation, load testing, and user acceptance trials",
+      },
+      {
+        phase: "Deployment",
+        duration: "2 weeks",
+        details:
+          "Gradual rollout with performance monitoring and user training",
+      },
+    ],
+  },
+  {
     id: 6,
     title: "EngageAI CRM",
     des: "AI-powered customer relationship management system with predictive analytics and automated engagement.",
     img: "https://i.imgur.com/YFO3XIg.png",
     iconLists: [
-      "/flutter.svg",
-      "/python.png",
+      "/Vue.png",
       "/ts.svg",
-      "/django.png",
+      "/python.png",
+      "/fastapi.svg",
       "/postgres.png",
     ],
     link: "//mymedbook.eu",
@@ -440,13 +446,7 @@ export const projects = [
     title: "TrendTrove",
     des: "E-commerce analytics platform with trend prediction and inventory optimization.",
     img: "https://i.imgur.com/DfWDX7a.png",
-    iconLists: [
-      "/flutter.svg",
-      "/python.png",
-      "/ts.svg",
-      "/django.png",
-      "/postgres.png",
-    ],
+    iconLists: ["/vue.png", "/ts.svg", "/api.png"],
     link: "//mymedbook.eu",
     features: [
       {
@@ -497,16 +497,79 @@ export const projects = [
     ],
   },
   {
+    id: 8,
+    title: "MyMedBook Digital Health",
+    des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
+    img: "https://i.imgur.com/kdGK7eh.png",
+    iconLists: [
+      "/flutter.svg",
+      "/next.svg",
+      "/python.png",
+      "/django.png",
+      "/postgres.png",
+      "/mongodb.webp",
+      "/googlecalendar.png",
+    ],
+    link: "//mymedbook.eu",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Patient-centric design with easy navigation and accessibility features",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Seamless synchronization of medical records, appointments, and prescriptions",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "HIPAA-compliant infrastructure, medical data encryption, and audit trails",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Microservices-based healthcare platform supporting multiple medical facilities",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "10 weeks",
+        details:
+          "Healthcare workflow analysis, compliance planning, and UX research",
+      },
+      {
+        phase: "Development Phase",
+        duration: "20 weeks",
+        details:
+          "Core medical features development, telemedicine integration, and security implementation",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "8 weeks",
+        details: "Compliance testing, security audits, and clinical validation",
+      },
+      {
+        phase: "Deployment",
+        duration: "4 weeks",
+        details:
+          "Phased rollout across healthcare facilities with staff training",
+      },
+    ],
+  },
+  {
     id: 9,
     title: "Diabetes Tracking App",
     des: "Diabetes support with AI coaching, progress sharing, requiring an access code from your healthcare provider.",
     img: "https://i.imgur.com/G4UZfHw.png",
     iconLists: [
-      "/postgres.png",
-      "/django.png",
-      "/ts.svg",
       "/flutter.svg",
       "/python.png",
+      "/django.png",
+      "/mysql.png",
+      "/mongodb.webp",
     ],
     link: "//ui.diabtrack.com",
     features: [
@@ -562,13 +625,7 @@ export const projects = [
     title: "VitaTrack - Personalized Vitamin Companion",
     des: "Effortlessly track your vitamins with the latest guidelines from top health organizations. Achieve peak wellness with VitaTrack!",
     img: "https://i.imgur.com/fxSqbQu.png",
-    iconLists: [
-      "/django.png",
-      "/postgres.png",
-      "/re.svg",
-      "/python.png",
-      "/ts.svg",
-    ],
+    iconLists: ["/re.svg", "/expo.svg", "/nodejs.png", "/express.png"],
     link: "//vitatrack.com",
     features: [
       {
@@ -621,7 +678,7 @@ export const projects = [
     title: "Crypto Portfolio Tracker",
     des: "Real-time tracking, instant alerts, and comprehensive portfolio management",
     img: "https://i.imgur.com/sv5lSiL.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/three.svg"],
+    iconLists: ["/re.svg", "/expo.svg", "/nodejs.png", "/express.png"],
     link: "//ui.crypto.com",
     features: [
       {
