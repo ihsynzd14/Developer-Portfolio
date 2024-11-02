@@ -76,7 +76,7 @@ export const projects = [
     id: 1,
     title: "FitFusion360",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "/pfit.svg",
+    img: "https://i.imgur.com/3LKTC6E.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -90,7 +90,7 @@ export const projects = [
     id: 2,
     title: "FinTrackPro",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "https://svgshare.com/i/19pt.svg",
+    img: "https://i.imgur.com/lUukq1x.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -104,7 +104,7 @@ export const projects = [
     id: 3,
     title: "ShiftSmart AI",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "/pshift.webp",
+    img: "https://i.imgur.com/PkJF885.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -118,7 +118,7 @@ export const projects = [
     id: 4,
     title: "InventorStock AI",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "/pinv.webp",
+    img: "https://i.imgur.com/cK3brKh.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -132,7 +132,7 @@ export const projects = [
     id: 5,
     title: "i2 Business Companion",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "/pi2.webp",
+    img: "https://i.imgur.com/fl9BAMk.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -146,7 +146,7 @@ export const projects = [
     id: 6,
     title: "EngageAI CRM",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "https://svgshare.com/i/19qF.svg",
+    img: "https://i.imgur.com/YFO3XIg.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -160,7 +160,7 @@ export const projects = [
     id: 7,
     title: "TrendTrove",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "https://svgshare.com/i/19sh.svg",
+    img: "https://i.imgur.com/DfWDX7a.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -174,7 +174,7 @@ export const projects = [
     id: 8,
     title: "MyMedBook Digital Health",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
-    img: "/p1.svg",
+    img: "https://i.imgur.com/kdGK7eh.png",
     iconLists: [
       "/flutter.svg",
       "/python.png",
@@ -188,7 +188,7 @@ export const projects = [
     id: 9,
     title: "Diabetes Tracking App",
     des: "Diabetes support with AI coaching, progress sharing, requiring an access code from your healthcare provider.",
-    img: "/p2.svg",
+    img: "https://i.imgur.com/G4UZfHw.png",
     iconLists: [
       "/postgres.png",
       "/django.png",
@@ -202,7 +202,7 @@ export const projects = [
     id: 10,
     title: "VitaTrack - Personalized Vitamin Companion",
     des: "Effortlessly track your vitamins with the latest guidelines from top health organizations. Achieve peak wellness with VitaTrack!",
-    img: "/p4.svg",
+    img: "https://i.imgur.com/fxSqbQu.png",
     iconLists: [
       "/django.png",
       "/postgres.png",
@@ -216,7 +216,7 @@ export const projects = [
     id: 11,
     title: "Crypto Portfolio Tracker",
     des: "Real-time tracking, instant alerts, and comprehensive portfolio management",
-    img: "/p5.svg",
+    img: "https://i.imgur.com/sv5lSiL.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/re.svg", "/three.svg"],
     link: "//ui.crypto.com",
   },
