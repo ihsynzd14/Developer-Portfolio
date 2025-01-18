@@ -9,89 +9,87 @@ import { projects } from "@/data";
 
 // Memoized Button Component
 const MagicButton = memo<MagicButtonProps>(
-  ({ title, icon, position, handleClick, otherClasses }) => (
-    <button
-      onClick={handleClick}
-      className={`flex items-center gap-2 px-6 py-3 rounded-xl bg-purple/10 hover:bg-purple/20 text-white transition-colors ${otherClasses}`}
-    >
-      {position === "left" && icon}
-      <span>{title}</span>
-      {position === "right" && icon}
-    </button>
-  )
+  ({ title, icon, position, handleClick, otherClasses }) => {
+    const isLoading = title === "Loading...";
+    
+    return (
+      <button
+        onClick={handleClick}
+        className="relative inline-flex h-12 w-full md:w-60 overflow-hidden rounded-lg p-[1px] focus:outline-none"
+        disabled={isLoading}
+      >
+        <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+        <span
+          className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+               bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
+        >
+          {isLoading ? (
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-5 border-2 border-purple border-t-transparent rounded-full animate-spin" />
+              <span className="text-purple">Loading</span>
+            </div>
+          ) : (
+            <>
+              {position === "left" && icon}
+              {title}
+              {position === "right" && icon}
+            </>
+          )}
+        </span>
+      </button>
+    );
+  }
 );
 MagicButton.displayName = "MagicButton";
 
 // Memoized Project Card Component
 const ProjectCard = memo<ProjectCardProps>(
   ({ project, isHovered, onHover, onLeave, onClick }) => {
-    // Memoize static content
-    const techStack = useMemo(
-      () => (
-        <div className="absolute top-3 right-3 flex flex-wrap gap-2 z-30">
-          {project.iconLists.map((icon, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{
-                duration: 0.2,
-                delay: index * 0.1,
-              }}
-              className="w-7 h-7 rounded-lg backdrop-blur-md bg-black/30 border border-white/10 flex items-center justify-center group-hover:border-purple/30 transition-colors"
-            >
-              <Image
-                src={icon}
-                alt={`tech-${index}`}
-                width={16}
-                height={16}
-                className="w-4 h-4"
-              />
-            </motion.div>
-          ))}
-        </div>
-      ),
-      [project.iconLists]
-    );
-
     return (
       <motion.div
-        layout
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.9 }}
-        whileHover={{ y: -5 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.3 }}
         onHoverStart={onHover}
         onHoverEnd={onLeave}
         onClick={onClick}
-        className="group relative bg-gradient-to-br from-[#13162d] to-[#1a1f47] rounded-2xl overflow-hidden border border-white/5 cursor-pointer"
+        className="group relative bg-gradient-to-br from-[#0f1225] to-[#151839] rounded-2xl overflow-hidden border border-white/5 cursor-pointer h-[400px] hover:border-purple/30 hover:-translate-y-1 transition-all duration-300"
       >
-        <div className="relative h-40 sm:h-48 overflow-hidden">
-          <motion.div
-            className="absolute inset-0 bg-gradient-to-t from-[#13162d] via-transparent to-black/50 z-20"
-            animate={{
-              opacity: isHovered ? 0.9 : 0.7,
-            }}
-            transition={{ duration: 0.3 }}
+        <div className="relative h-48 overflow-hidden">
+          <div
+            className={`absolute inset-0 bg-gradient-to-t from-[#13162d] via-transparent to-black/50 z-20 transition-opacity duration-300 ${
+              isHovered ? "opacity-90" : "opacity-70"
+            }`}
           />
           <Image
             src={project.img}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
             width={400}
             height={300}
             priority={project.id <= 3}
             loading={project.id <= 3 ? "eager" : "lazy"}
           />
-          {techStack}
+          
+          <div className="absolute top-3 right-3 flex flex-wrap gap-2 z-30">
+            {project.iconLists.map((icon, index) => (
+              <div
+                key={index}
+                className="w-8 h-8 rounded-lg backdrop-blur-md bg-black/40 border border-white/10 flex items-center justify-center group-hover:border-purple/30 transition-all hover:scale-110"
+              >
+                <Image
+                  src={icon}
+                  alt={`tech-${index}`}
+                  width={18}
+                  height={18}
+                  className="w-5 h-5"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="p-4 md:p-6 space-y-3">
+        <div className="p-6 space-y-4">
           <div className="flex items-start justify-between gap-4">
             <motion.h3
-              className="text-lg md:text-xl font-bold text-white group-hover:text-purple transition-colors line-clamp-1"
+              className="text-xl font-bold text-white group-hover:text-purple transition-colors line-clamp-1"
               animate={{
                 color: isHovered ? "#CBACF9" : "#FFFFFF",
               }}
@@ -99,16 +97,28 @@ const ProjectCard = memo<ProjectCardProps>(
               {project.title}
             </motion.h3>
             <motion.div
-              className="shrink-0 p-2 rounded-full bg-purple/10 text-purple hover:bg-purple/20 transition-colors"
+              className="shrink-0 p-2.5 rounded-full bg-purple/10 text-purple hover:bg-purple/20 transition-all"
               whileHover={{ scale: 1.1, rotate: -15 }}
               whileTap={{ scale: 0.95 }}
             >
-              <FaLocationArrow size={14} />
+              <FaLocationArrow size={16} />
             </motion.div>
           </div>
-          <p className="text-[#BEC1DD] text-sm line-clamp-2 min-h-[40px]">
+          
+          <p className="text-[#BEC1DD] text-sm leading-relaxed line-clamp-3">
             {project.des}
           </p>
+          
+          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#13162d] to-transparent">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex items-center gap-2 text-sm text-purple"
+            >
+              <span>View Project Details</span>
+              <FaLocationArrow size={12} className="transform rotate-45" />
+            </motion.div>
+          </div>
         </div>
 
         <motion.div
@@ -129,6 +139,7 @@ const RecentProjects = () => {
   const [visibleProjects, setVisibleProjects] = useState(3);
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [canCollapse, setCanCollapse] = useState(false);
 
   // Memoize visible projects
   const visibleProjectsList = useMemo(
@@ -140,9 +151,21 @@ const RecentProjects = () => {
   const loadMore = useCallback(() => {
     setIsLoading(true);
     setTimeout(() => {
-      setVisibleProjects((prev) => Math.min(prev + 3, projects.length));
+      const newValue = Math.min(visibleProjects + 3, projects.length);
+      setVisibleProjects(newValue);
+      setCanCollapse(newValue === projects.length);
       setIsLoading(false);
-    }, 300);
+    }, 250); // 500ms loading göster
+  }, [visibleProjects, projects.length]);
+
+  const handleCollapse = useCallback(() => {
+    setVisibleProjects(3);
+    setCanCollapse(false);
+    // Smooth scroll to projects section
+    document.getElementById('projects')?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
   }, []);
 
   const handleProjectClick = useCallback(
@@ -159,33 +182,64 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 px-4">
-        <AnimatePresence mode="popLayout">
-          {visibleProjectsList.map((project) => (
-            <ProjectCard
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 px-4">
+        <AnimatePresence mode="wait" initial={false}>
+          {visibleProjectsList.map((project, index) => (
+            <motion.div
               key={project.id}
-              project={project}
-              isHovered={hoveredId === project.id}
-              onHover={() => setHoveredId(project.id)}
-              onLeave={() => setHoveredId(null)}
-              onClick={() => handleProjectClick(project.id)}
-            />
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ 
+                opacity: 1, 
+                y: 0,
+                transition: {
+                  duration: 0.4,
+                  delay: index * 0.1,
+                  ease: "easeOut"
+                }
+              }}
+              exit={{ 
+                opacity: 0,
+                y: 20,
+                transition: {
+                  duration: 0.3,
+                  delay: 0,
+                  ease: "easeIn"
+                }
+              }}
+              style={{ gridArea: "auto" }}
+            >
+              <ProjectCard
+                project={project}
+                isHovered={hoveredId === project.id}
+                onHover={() => setHoveredId(project.id)}
+                onLeave={() => setHoveredId(null)}
+                onClick={() => handleProjectClick(project.id)}
+              />
+            </motion.div>
           ))}
         </AnimatePresence>
       </div>
 
-      {visibleProjects < projects.length && (
-        <motion.div
-          className="flex justify-center mt-8 md:mt-12 px-4"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
-        >
+      <motion.div
+        className="flex justify-center mt-8 md:mt-12 px-4"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 20 }}
+      >
+        {canCollapse ? (
+          <MagicButton
+            title="Show Less"
+            icon={<FaLocationArrow className="rotate-180" />}
+            position="right"
+            handleClick={handleCollapse}
+            otherClasses=""
+          />
+        ) : visibleProjects < projects.length && (
           <MagicButton
             title={
               isLoading
                 ? "Loading..."
-                : `Show More Projects (${projects.length - visibleProjects})`
+                : `Show More (${projects.length - visibleProjects})`
             }
             icon={
               <motion.div
@@ -203,10 +257,10 @@ const RecentProjects = () => {
             }
             position="right"
             handleClick={loadMore}
-            otherClasses={isLoading ? "opacity-80" : ""}
+            otherClasses={isLoading ? "opacity-80 cursor-not-allowed" : ""}
           />
-        </motion.div>
-      )}
+        )}
+      </motion.div>
     </section>
   );
 };
