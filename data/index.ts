@@ -112,25 +112,25 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "6 weeks",
+        duration: "1 week",
         details:
           "Requirements gathering, wireframing, and architecture planning with stakeholders",
       },
       {
         phase: "Development Phase",
-        duration: "14 weeks",
+        duration: "8 weeks",
         details:
           "Iterative development with bi-weekly sprints and continuous integration",
       },
       {
         phase: "Testing and QA",
-        duration: "4 weeks",
+        duration: "2 weeks",
         details:
           "Comprehensive testing including unit tests, integration tests, and user acceptance testing",
       },
       {
         phase: "Deployment",
-        duration: "2 weeks",
+        duration: "1 week",
         details:
           "Staged deployment with monitoring and performance optimization",
       },
@@ -138,6 +138,67 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Turna Emlak - Real Estate",
+    des: "Modern real estate management platform: A comprehensive solution equipped with portfolio tracking, client management and automated listing syndication features",
+    description: "The Turna Emlak project emerged from our vision to modernize real estate business processes. By carefully analyzing user feedback and industry needs to streamline real estate agents' daily operations, we developed a solution that balances powerful features with ease of use. The project involved complex challenges like multi-portal listing integration and real-time portfolio management. I'm particularly proud of the automated listing syndication system and client tracking module we built, which significantly improved operational efficiency for real estate offices.",
+    img: "https://i.imgur.com/YK7L3Xt.png",
+    iconLists: [
+      "/re.svg",
+      "/next.svg",
+      "/supabase.png",
+      "/tailwind.png",
+      "/typescript.svg",
+    ],
+    link: "//xenithsoft.com",
+    features: [
+      {
+        title: "Responsive and intuitive user interface",
+        details:
+          "Modern interface with property listings, client profiles, and interactive dashboards",
+      },
+      {
+        title: "Real-time data synchronization",
+        details:
+          "Instant property updates across multiple platforms with automated listing management",
+      },
+      {
+        title: "Advanced security measures",
+        details:
+          "Secure client data handling, role-based access control, and activity logging",
+      },
+      {
+        title: "Scalable architecture",
+        details:
+          "Cloud-based system supporting multiple offices and large property portfolios",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "2 weeks",
+        details:
+          "Real estate workflow analysis, platform architecture design, and UX research",
+      },
+      {
+        phase: "Development Phase",
+        duration: "6 weeks",
+        details: "Core features development with portal integrations and automation",
+      },
+      {
+        phase: "Testing and QA",
+        duration: "2 weeks",
+        details:
+          "Integration testing, performance optimization, and user acceptance testing",
+      },
+      {
+        phase: "Deployment",
+        duration: "1 week",
+        details: "Phased office rollout with staff training and data migration",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "FinTrackPro",
     des: "Comprehensive financial tracking and analysis platform with real-time insights and automated reporting.",
     description: "FinTrackPro emerged from our desire to simplify financial management for businesses. Through careful consideration of user feedback and industry best practices, we developed a solution that balances powerful features with ease of use. The project involved complex challenges in real-time data processing and security implementation, which helped me grow significantly as a developer. I'm particularly proud of the automated reporting system we built, which has helped many businesses streamline their financial operations.",
@@ -176,30 +237,30 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "8 weeks",
+        duration: "2 weeks",
         details:
           "Financial systems analysis, security planning, and UX research",
       },
       {
         phase: "Development Phase",
-        duration: "16 weeks",
+        duration: "6 weeks",
         details: "Agile development with focus on security and performance",
       },
       {
         phase: "Testing and QA",
-        duration: "6 weeks",
+        duration: "2 weeks",
         details:
           "Security audits, performance testing, and compliance verification",
       },
       {
         phase: "Deployment",
-        duration: "3 weeks",
+        duration: "1 week",
         details: "Phased rollout with detailed monitoring and backup systems",
       },
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "i2 Business Companion",
     des: "All-in-one business management platform with integrated CRM, accounting, and project management.",
     description: "The development of i2 Business Companion was driven by the need for a unified business management solution. Working closely with business owners, we created a platform that simplifies daily operations. The project presented interesting challenges in data integration and workflow automation, pushing me to explore innovative solutions. I learned valuable lessons about scalability and the importance of modular design in enterprise applications.",
@@ -237,30 +298,30 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "9 weeks",
+        duration: "1 week",
         details:
           "Business process analysis, integration planning, and UX research",
       },
       {
         phase: "Development Phase",
-        duration: "18 weeks",
+        duration: "8 weeks",
         details: "Module development with continuous integration/deployment",
       },
       {
         phase: "Testing and QA",
-        duration: "6 weeks",
+        duration: "2 weeks",
         details:
           "End-to-end testing, performance optimization, and security audits",
       },
       {
         phase: "Deployment",
-        duration: "4 weeks",
+        duration: "1 week",
         details: "Module-wise deployment with business continuity planning",
       },
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "InventorStock AI",
     des: "Intelligent inventory management system with predictive analytics and automated reordering.",
     description: "InventorStock AI represents our venture into applying artificial intelligence to inventory management. The project allowed me to explore advanced predictive analytics while maintaining a focus on practical business needs. We implemented machine learning algorithms for demand forecasting and automated reordering, which taught me a lot about balancing sophisticated technology with user-friendly interfaces. The system's success in reducing inventory costs for our clients has been particularly rewarding.",
@@ -300,29 +361,29 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "5 weeks",
+        duration: "1 week",
         details:
           "Inventory system analysis, AI model design, and integration planning",
       },
       {
         phase: "Development Phase",
-        duration: "10 weeks",
+        duration: "6 weeks",
         details: "Core functionality development with ML model integration",
       },
       {
         phase: "Testing and QA",
-        duration: "4 weeks",
+        duration: "2 weeks",
         details: "Predictive model validation and system integration testing",
       },
       {
         phase: "Deployment",
-        duration: "3 weeks",
+        duration: "1 week",
         details: "Phased warehouse rollout with staff training",
       },
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "ShiftSmart AI",
     des: "AI-powered workforce management system with intelligent scheduling and performance analytics.",
     description: "Developing ShiftSmart AI was an exciting opportunity to address common workforce management challenges. We focused on creating an intelligent system that learns from scheduling patterns and employee preferences. The project involved complex algorithm development for optimal shift allocation, while ensuring the interface remained simple and intuitive. It was rewarding to see how our solution helped businesses improve their workforce efficiency.",
@@ -361,31 +422,31 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "7 weeks",
+        duration: "1 week",
         details: "Workforce analysis, AI model planning, and UX prototyping",
       },
       {
         phase: "Development Phase",
-        duration: "12 weeks",
+        duration: "6 weeks",
         details:
           "AI model training, frontend development, and backend integration",
       },
       {
         phase: "Testing and QA",
-        duration: "5 weeks",
+        duration: "2 weeks",
         details:
           "Algorithm validation, load testing, and user acceptance trials",
       },
       {
         phase: "Deployment",
-        duration: "2 weeks",
+        duration: "1 week",
         details:
           "Gradual rollout with performance monitoring and user training",
       },
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "EngageAI CRM",
     des: "AI-powered customer relationship management system with predictive analytics and automated engagement.",
     description: "EngageAI CRM was born from our vision to modernize customer relationship management. The project challenged us to implement advanced AI capabilities while maintaining ease of use. We developed innovative solutions for customer behavior analysis and automated engagement, which taught me valuable lessons about balancing automation with personalization. The positive feedback from users about improved customer retention has been particularly gratifying.",
@@ -423,32 +484,32 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "8 weeks",
+        duration: "2 weeks",
         details:
           "CRM workflow analysis, AI model selection, and UX prototyping",
       },
       {
         phase: "Development Phase",
-        duration: "16 weeks",
+        duration: "8 weeks",
         details:
           "AI integration, custom workflow development, and automation implementation",
       },
       {
         phase: "Testing and QA",
-        duration: "6 weeks",
+        duration: "2 weeks",
         details:
           "AI model validation, workflow testing, and performance optimization",
       },
       {
         phase: "Deployment",
-        duration: "3 weeks",
+        duration: "1 week",
         details:
           "Department-wise rollout with user training and data migration",
       },
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "TrendTrove",
     des: "E-commerce analytics platform with trend prediction and inventory optimization.",
     description: "TrendTrove represents our effort to bring data-driven decision making to e-commerce businesses. The project involved creating sophisticated analytics tools while ensuring they remained accessible to non-technical users. Working on the trend prediction algorithms and real-time analytics dashboard helped me understand the importance of presenting complex data in an understandable way. It's been rewarding to see businesses make more informed decisions using our platform.",
@@ -480,31 +541,31 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "7 weeks",
+        duration: "1 week",
         details:
           "Market analysis, trend algorithm design, and interface planning",
       },
       {
         phase: "Development Phase",
-        duration: "15 weeks",
+        duration: "6 weeks",
         details:
           "Analytics engine development, API integrations, and frontend implementation",
       },
       {
         phase: "Testing and QA",
-        duration: "5 weeks",
+        duration: "2 weeks",
         details:
           "Algorithm accuracy testing, load testing, and user acceptance",
       },
       {
         phase: "Deployment",
-        duration: "2 weeks",
+        duration: "1 week",
         details: "Beta testing with select merchants and full rollout",
       },
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "MyMedBook Digital Health",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
     description: "MyMedBook Digital Health was a significant undertaking in the healthcare technology space. We focused on creating a comprehensive system that simplifies health management while ensuring strict compliance with medical data regulations. The project taught me valuable lessons about handling sensitive information and the importance of reliable, user-friendly healthcare solutions. Seeing how our platform has helped improve patient care coordination has been incredibly fulfilling.",
@@ -544,31 +605,31 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "10 weeks",
+        duration: "2 weeks",
         details:
           "Healthcare workflow analysis, compliance planning, and UX research",
       },
       {
         phase: "Development Phase",
-        duration: "20 weeks",
+        duration: "10 weeks",
         details:
           "Core medical features development, telemedicine integration, and security implementation",
       },
       {
         phase: "Testing and QA",
-        duration: "8 weeks",
+        duration: "2 weeks",
         details: "Compliance testing, security audits, and clinical validation",
       },
       {
         phase: "Deployment",
-        duration: "4 weeks",
+        duration: "1 week",
         details:
           "Phased rollout across healthcare facilities with staff training",
       },
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Diabetes Tracking App",
     des: "Diabetes support with AI coaching, progress sharing, requiring an access code from your healthcare provider.",
     description: "The Diabetes Tracking App project allowed us to make a meaningful impact in healthcare management. We worked closely with healthcare providers to develop an intuitive system for diabetes monitoring and management. The implementation of AI coaching features and secure data sharing mechanisms provided valuable insights into creating effective healthcare solutions. It's been particularly rewarding to see how our app has helped users better manage their condition.",
@@ -606,31 +667,31 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "8 weeks",
+        duration: "1 week",
         details:
           "Medical device integration planning, AI coaching system design, and UX research",
       },
       {
         phase: "Development Phase",
-        duration: "16 weeks",
+        duration: "8 weeks",
         details:
           "Core tracking features, AI model implementation, and provider dashboard",
       },
       {
         phase: "Testing and QA",
-        duration: "6 weeks",
+        duration: "2 weeks",
         details:
           "Medical accuracy validation, integration testing, and compliance verification",
       },
       {
         phase: "Deployment",
-        duration: "3 weeks",
+        duration: "1 week",
         details: "Beta testing with select clinics and phased patient rollout",
       },
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "VitaTrack - Personalized Vitamin Companion",
     des: "Effortlessly track your vitamins with the latest guidelines from top health organizations. Achieve peak wellness with VitaTrack!",
     description: "VitaTrack emerged from our desire to simplify vitamin and supplement management. The project involved creating a personalized tracking system that adapts to individual needs while following scientific guidelines. Developing the recommendation engine and notification system taught me important lessons about creating engaging health applications. The positive user feedback about improved supplement adherence has been especially motivating.",
@@ -661,30 +722,30 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "6 weeks",
+        duration: "1 week",
         details: "Nutritional database design, recommendation engine planning",
       },
       {
         phase: "Development Phase",
-        duration: "12 weeks",
+        duration: "6 weeks",
         details:
           "Core tracking features, personalization algorithm, notification system",
       },
       {
         phase: "Testing and QA",
-        duration: "4 weeks",
+        duration: "2 weeks",
         details:
           "Recommendation accuracy testing, usability studies, performance optimization",
       },
       {
         phase: "Deployment",
-        duration: "2 weeks",
+        duration: "1 week",
         details: "Staged rollout with continuous monitoring and updates",
       },
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "Crypto Portfolio Tracker",
     des: "Real-time tracking, instant alerts, and comprehensive portfolio management",
     description: "The Crypto Portfolio Tracker project presented unique challenges in handling real-time data and creating reliable tracking systems. We focused on developing a secure and efficient platform for cryptocurrency portfolio management. Working with multiple exchange APIs and implementing real-time price tracking helped me understand the complexities of financial technology development. It's been exciting to see how our solution has helped users better manage their crypto investments.",
@@ -716,25 +777,25 @@ export const projects = [
     timeline: [
       {
         phase: "Planning and Design",
-        duration: "7 weeks",
+        duration: "1 week",
         details:
           "Exchange API integration planning, security architecture design",
       },
       {
         phase: "Development Phase",
-        duration: "14 weeks",
+        duration: "6 weeks",
         details:
           "Trading interface development, real-time data processing implementation",
       },
       {
         phase: "Testing and QA",
-        duration: "5 weeks",
+        duration: "2 weeks",
         details:
           "Exchange connectivity testing, security audits, performance optimization",
       },
       {
         phase: "Deployment",
-        duration: "3 weeks",
+        duration: "1 week",
         details: "Beta testing with power users and gradual public release",
       },
     ],
