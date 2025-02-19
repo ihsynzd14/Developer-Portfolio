@@ -72,8 +72,61 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
+   {
     id: 1,
+    title: "ChefSense",
+    des: "Your intelligent culinary companion, powered by advanced AI technology to revolutionize your cooking experience.",
+    description: "ChefSense transforms the way you approach cooking by leveraging artificial intelligence to provide personalized recipe recommendations, real-time cooking assistance, and ingredient-based recipe discovery. Whether you're a seasoned chef or a cooking enthusiast, ChefSense helps you explore new recipes and perfect your culinary skills.",
+    img: "https://i.imgur.com/TdaJrDn.png", 
+    iconLists: [
+      "/kotlin.svg",
+      "/jetpack.svg",
+      "/firebase.svg",
+    ],
+    link: "https://github.com/ihsynzd/chefsense",
+    features: [
+      {
+        title: "AI-Powered Recommendations",
+        details: "Personalized recipe suggestions based on your preferences, smart ingredient substitution recommendations, and real-time cooking guidance."
+      },
+      {
+        title: "Ingredient-Based Recipe Search",
+        details: "Find recipes using ingredients you have, filter recipes by dietary restrictions and cuisine type, and save favorite recipes for quick access."
+      },
+      {
+        title: "Interactive Cooking Assistant",
+        details: "Real-time Q&A for cooking queries, step-by-step cooking instructions, and timer integration for precise cooking."
+      },
+      {
+        title: "Modern User Interface",
+        details: "Material Design 3 components, intuitive navigation, and responsive layout for different screen sizes."
+      }
+    ],
+    timeline: [
+      {
+        phase: "Planning and Design",
+        duration: "1 week",
+        details: "Initial concept development and design planning."
+      },
+      {
+        phase: "Development Phase",
+        duration: "2 weeks",
+        details: "Core functionality development and integration of AI features."
+      },
+      {
+        phase: "Testing and QA",
+        duration: "2 week",
+        details: "Comprehensive testing including user acceptance testing."
+      },
+      {
+        phase: "Deployment",
+        duration: "1 week",
+        details: "Final rollout and user training."
+      }
+    ]
+  },
+  {
+    id: 2,
     title: "Aidas Corners - Pastry Management System",
     des: "Comprehensive pastry management system with real-time sales tracking, inventory management, and branch performance analytics.",
     description: "Aidas Corners is a sophisticated pastry management solution designed to streamline operations across multiple branches, enhanced by AI-powered analytics and intelligent forecasting. The system features real-time sales monitoring, detailed product statistics, and comprehensive branch performance analytics driven by machine learning algorithms. I implemented an intuitive interface that allows easy tracking of popular items and branch-specific performance metrics, while AI assistance helps predict optimal inventory levels and suggests data-driven decisions for the pastry business. The integrated AI technology continuously learns from sales patterns to improve accuracy in demand forecasting and product recommendations",
@@ -126,7 +179,7 @@ export const projects = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     title: "FitFusion360",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
     description: "Working on FitFusion360 has been an incredible journey in healthcare technology. Our team focused on creating an intuitive platform that simplifies health management while maintaining the highest security standards. We implemented real-time synchronization for medical records and integrated secure video calls, making healthcare more accessible. The project taught me valuable lessons about handling sensitive data and the importance of user-centric design in healthcare applications.",
@@ -190,7 +243,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Turna Emlak - Real Estate",
     des: "Modern real estate management platform: A comprehensive solution equipped with portfolio tracking, client management and automated listing syndication features",
     description: "The Turna Emlak project emerged from our vision to modernize real estate business processes. By carefully analyzing user feedback and industry needs to streamline real estate agents' daily operations, we developed a solution that balances powerful features with ease of use. The project involved complex challenges like multi-portal listing integration and real-time portfolio management. I'm particularly proud of the automated listing syndication system and client tracking module we built, which significantly improved operational efficiency for real estate offices.",
@@ -251,7 +304,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "FinTrackPro",
     des: "Comprehensive financial tracking and analysis platform with real-time insights and automated reporting.",
     description: "FinTrackPro emerged from our desire to simplify financial management for businesses. Through careful consideration of user feedback and industry best practices, we developed a solution that balances powerful features with ease of use. The project involved complex challenges in real-time data processing and security implementation, which helped me grow significantly as a developer. I'm particularly proud of the automated reporting system we built, which has helped many businesses streamline their financial operations.",
@@ -313,7 +366,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "i2 Business Companion",
     des: "All-in-one business management platform with integrated CRM, accounting, and project management.",
     description: "The development of i2 Business Companion was driven by the need for a unified business management solution. Working closely with business owners, we created a platform that simplifies daily operations. The project presented interesting challenges in data integration and workflow automation, pushing me to explore innovative solutions. I learned valuable lessons about scalability and the importance of modular design in enterprise applications.",
@@ -374,7 +427,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "InventorStock AI",
     des: "Intelligent inventory management system with predictive analytics and automated reordering.",
     description: "InventorStock AI represents our venture into applying artificial intelligence to inventory management. The project allowed me to explore advanced predictive analytics while maintaining a focus on practical business needs. We implemented machine learning algorithms for demand forecasting and automated reordering, which taught me a lot about balancing sophisticated technology with user-friendly interfaces. The system's success in reducing inventory costs for our clients has been particularly rewarding.",
@@ -436,7 +489,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "ShiftSmart AI",
     des: "AI-powered workforce management system with intelligent scheduling and performance analytics.",
     description: "Developing ShiftSmart AI was an exciting opportunity to address common workforce management challenges. We focused on creating an intelligent system that learns from scheduling patterns and employee preferences. The project involved complex algorithm development for optimal shift allocation, while ensuring the interface remained simple and intuitive. It was rewarding to see how our solution helped businesses improve their workforce efficiency.",
@@ -499,7 +552,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "EngageAI CRM",
     des: "AI-powered customer relationship management system with predictive analytics and automated engagement.",
     description: "EngageAI CRM was born from our vision to modernize customer relationship management. The project challenged us to implement advanced AI capabilities while maintaining ease of use. We developed innovative solutions for customer behavior analysis and automated engagement, which taught me valuable lessons about balancing automation with personalization. The positive feedback from users about improved customer retention has been particularly gratifying.",
@@ -562,7 +615,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "TrendTrove",
     des: "E-commerce analytics platform with trend prediction and inventory optimization.",
     description: "TrendTrove represents our effort to bring data-driven decision making to e-commerce businesses. The project involved creating sophisticated analytics tools while ensuring they remained accessible to non-technical users. Working on the trend prediction algorithms and real-time analytics dashboard helped me understand the importance of presenting complex data in an understandable way. It's been rewarding to see businesses make more informed decisions using our platform.",
@@ -618,7 +671,7 @@ export const projects = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "MyMedBook Digital Health",
     des: "All-in-one digital health system. Manage dossiers, therapies, events, alarms, notifications, tele-videocalls, and family collaborations effortlessly for a healthier life.",
     description: "MyMedBook Digital Health was a significant undertaking in the healthcare technology space. We focused on creating a comprehensive system that simplifies health management while ensuring strict compliance with medical data regulations. The project taught me valuable lessons about handling sensitive information and the importance of reliable, user-friendly healthcare solutions. Seeing how our platform has helped improve patient care coordination has been incredibly fulfilling.",
@@ -682,7 +735,7 @@ export const projects = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "Diabetes Tracking App",
     des: "Diabetes support with AI coaching, progress sharing, requiring an access code from your healthcare provider.",
     description: "The Diabetes Tracking App project allowed us to make a meaningful impact in healthcare management. We worked closely with healthcare providers to develop an intuitive system for diabetes monitoring and management. The implementation of AI coaching features and secure data sharing mechanisms provided valuable insights into creating effective healthcare solutions. It's been particularly rewarding to see how our app has helped users better manage their condition.",
@@ -744,7 +797,7 @@ export const projects = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     title: "VitaTrack - Personalized Vitamin Companion",
     des: "Effortlessly track your vitamins with the latest guidelines from top health organizations. Achieve peak wellness with VitaTrack!",
     description: "VitaTrack emerged from our desire to simplify vitamin and supplement management. The project involved creating a personalized tracking system that adapts to individual needs while following scientific guidelines. Developing the recommendation engine and notification system taught me important lessons about creating engaging health applications. The positive user feedback about improved supplement adherence has been especially motivating.",
