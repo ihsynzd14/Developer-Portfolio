@@ -77,7 +77,7 @@ export const projects = [
     title: "ChefSense",
     des: "Your intelligent culinary companion, powered by advanced AI technology to revolutionize your cooking experience.",
     description: "ChefSense transforms the way you approach cooking by leveraging artificial intelligence to provide personalized recipe recommendations, real-time cooking assistance, and ingredient-based recipe discovery. Whether you're a seasoned chef or a cooking enthusiast, ChefSense helps you explore new recipes and perfect your culinary skills.",
-    img: "https://i.imgur.com/TdaJrDn.png", 
+    img: "https://i.imgur.com/XIEBeXo.png", 
     iconLists: [
       "/kotlin.svg",
       "/jetpack.svg",
