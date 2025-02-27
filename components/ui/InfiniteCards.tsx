@@ -115,8 +115,11 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 {/* add this div for the profile img */}
-                <div className="me-3">
-                  <img src="/profile.svg" alt="profile" />
+                <div className="me-3 bg-gray-800 rounded-full w-10 h-10 flex items-center justify-center text-white text-md">
+                  {item.name.split(" ")
+                    .slice(0, 2)
+                    .map((n) => n.charAt(0).toUpperCase())
+                    .join('.')}
                 </div>
                 <span className="flex flex-col gap-1">
                   {/* change text color, font-normal to font-bold, text-xl */}
